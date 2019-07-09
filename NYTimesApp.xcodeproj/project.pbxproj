@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0F5BC4822D50837007F0592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC4722D50837007F0592 /* AppDelegate.swift */; };
-		D0F5BC4A22D50837007F0592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC4922D50837007F0592 /* ViewController.swift */; };
+		D0F5BC4A22D50837007F0592 /* MostPopularListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC4922D50837007F0592 /* MostPopularListingViewController.swift */; };
 		D0F5BC4D22D50837007F0592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F5BC4B22D50837007F0592 /* Main.storyboard */; };
 		D0F5BC4F22D50838007F0592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F5BC4E22D50838007F0592 /* Assets.xcassets */; };
 		D0F5BC5222D50838007F0592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F5BC5022D50838007F0592 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		D0F5BC4422D50837007F0592 /* NYTimesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F5BC4722D50837007F0592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0F5BC4922D50837007F0592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0F5BC4922D50837007F0592 /* MostPopularListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularListingViewController.swift; sourceTree = "<group>"; };
 		D0F5BC4C22D50837007F0592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0F5BC4E22D50838007F0592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F5BC5122D50838007F0592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +97,14 @@
 		D0F5BC4622D50837007F0592 /* NYTimesApp */ = {
 			isa = PBXGroup;
 			children = (
-				D0F5BC4722D50837007F0592 /* AppDelegate.swift */,
-				D0F5BC4922D50837007F0592 /* ViewController.swift */,
-				D0F5BC4B22D50837007F0592 /* Main.storyboard */,
+				D0F5BC7B22D50D50007F0592 /* Custom Cells */,
+				D0F5BC7A22D50D31007F0592 /* Network Layer */,
+				D0F5BC7922D50D27007F0592 /* Models */,
+				D0F5BC7822D50D14007F0592 /* Storyboards */,
+				D0F5BC7722D5090D007F0592 /* AppDelegate */,
+				D0F5BC7622D508DC007F0592 /* Supporting Files */,
+				D0F5BC7522D508B2007F0592 /* View Controllers */,
 				D0F5BC4E22D50838007F0592 /* Assets.xcassets */,
-				D0F5BC5022D50838007F0592 /* LaunchScreen.storyboard */,
-				D0F5BC5322D50838007F0592 /* Info.plist */,
 			);
 			path = NYTimesApp;
 			sourceTree = "<group>";
@@ -123,6 +125,68 @@
 				D0F5BC6922D50838007F0592 /* Info.plist */,
 			);
 			path = NYTimesAppUITests;
+			sourceTree = "<group>";
+		};
+		D0F5BC7522D508B2007F0592 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5BC7D22D50D6F007F0592 /* Parent View Controller */,
+				D0F5BC4922D50837007F0592 /* MostPopularListingViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D0F5BC7622D508DC007F0592 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5BC5322D50838007F0592 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F5BC7722D5090D007F0592 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5BC4722D50837007F0592 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D0F5BC7822D50D14007F0592 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5BC4B22D50837007F0592 /* Main.storyboard */,
+				D0F5BC5022D50838007F0592 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D0F5BC7922D50D27007F0592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0F5BC7A22D50D31007F0592 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		D0F5BC7B22D50D50007F0592 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		D0F5BC7D22D50D6F007F0592 /* Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Parent View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F5BC4A22D50837007F0592 /* ViewController.swift in Sources */,
+				D0F5BC4A22D50837007F0592 /* MostPopularListingViewController.swift in Sources */,
 				D0F5BC4822D50837007F0592 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNBQR47BQU;
-				INFOPLIST_FILE = NYTimesApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTimesApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNBQR47BQU;
-				INFOPLIST_FILE = NYTimesApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTimesApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
