@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ArticleTableViewCell: UITableViewCell {
     
@@ -22,17 +23,19 @@ class ArticleTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupUI()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setupUI(){
+        thumbnailImageView.circular()
+        thumbnailImageView.borderd()
     }
     
     func configure(with article: Article) {
-        // TODO: - map the thumbnail using alamofire
+        thumbnailImageView.kf.indicatorType = .activity
+        if let thumbnailURL = URL(string: article.getThumbnailURLStr() ?? ""){
+            thumbnailImageView.kf.setImage(with: thumbnailURL)
+        }
         titleLabel.text = article.title
         abstractLabel.text = article.abstract
         dateLabel.text = article.publishedDate

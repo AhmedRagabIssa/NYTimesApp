@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Wsi-TY-aM9">
-                        <rect key="frame" x="304" y="40" width="8" height="12"/>
+                        <rect key="frame" x="300" y="40" width="8" height="12"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="12" id="W58-EB-SF1"/>
                             <constraint firstAttribute="width" constant="8" id="fd7-aw-Yv4"/>
@@ -47,7 +47,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-06-11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkM-wz-SEE">
-                        <rect key="frame" x="235" y="63.5" width="65" height="14.5"/>
+                        <rect key="frame" x="227" y="63.5" width="65" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -59,12 +59,12 @@
                     <constraint firstItem="7Zw-Da-A2w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tx1-a5-0un"/>
                     <constraint firstItem="Pd2-mi-nb9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="V3U-e5-NAP"/>
                     <constraint firstItem="bj5-rY-hj0" firstAttribute="top" secondItem="Pd2-mi-nb9" secondAttribute="bottom" constant="10" id="Wej-qa-yVD"/>
-                    <constraint firstAttribute="trailing" secondItem="Wsi-TY-aM9" secondAttribute="trailing" constant="8" id="dOe-3a-KyN"/>
-                    <constraint firstItem="Wsi-TY-aM9" firstAttribute="leading" secondItem="fkM-wz-SEE" secondAttribute="trailing" constant="4" id="dOp-KO-HtP"/>
+                    <constraint firstAttribute="trailing" secondItem="Wsi-TY-aM9" secondAttribute="trailing" constant="12" id="dOe-3a-KyN"/>
+                    <constraint firstItem="Wsi-TY-aM9" firstAttribute="leading" secondItem="fkM-wz-SEE" secondAttribute="trailing" constant="8" id="dOp-KO-HtP"/>
                     <constraint firstAttribute="bottom" secondItem="fkM-wz-SEE" secondAttribute="bottom" constant="13.5" id="dU5-Eq-v4b"/>
                     <constraint firstItem="bj5-rY-hj0" firstAttribute="leading" secondItem="Pd2-mi-nb9" secondAttribute="leading" id="gT7-df-0zC"/>
                     <constraint firstItem="fkM-wz-SEE" firstAttribute="top" secondItem="bj5-rY-hj0" secondAttribute="bottom" constant="2" id="hdS-oa-Agb"/>
-                    <constraint firstItem="Wsi-TY-aM9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bj5-rY-hj0" secondAttribute="trailing" constant="4" id="ipF-sw-Trb"/>
+                    <constraint firstItem="Wsi-TY-aM9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bj5-rY-hj0" secondAttribute="trailing" constant="8" id="ipF-sw-Trb"/>
                     <constraint firstItem="Wsi-TY-aM9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pd2-mi-nb9" secondAttribute="trailing" constant="4" id="q6r-aS-34x"/>
                     <constraint firstItem="7Zw-Da-A2w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="yrn-HG-dK1"/>
                 </constraints>

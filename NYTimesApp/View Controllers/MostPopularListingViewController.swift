@@ -23,11 +23,11 @@ class MostPopularListingViewController: ParentViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func setupUI() {
         // this is only to remove the tableview footer
+        title = "NYTimes Articles"
         setupLoadingIndicator()
         articlesTableView.tableFooterView = UIView()
     }

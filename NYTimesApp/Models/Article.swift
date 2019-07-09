@@ -20,6 +20,7 @@ struct Article: Codable {
     var id: Int?
     var assetID: Int?
     var views: Int?
+    var media: [Media]
     var uri: String?
     
     enum CodingKeys: String, CodingKey {
@@ -34,6 +35,16 @@ struct Article: Codable {
         case id
         case assetID = "asset_id"
         case views
+        case media
         case uri
+    }
+    
+    func getThumbnailURLStr() -> String? {
+        for metaData in media[0].mediaMetadata {
+            if metaData.format == .standardThumbnail {
+                return metaData.url
+            }
+        }
+        return nil
     }
 }
