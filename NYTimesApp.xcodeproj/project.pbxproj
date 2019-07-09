@@ -27,6 +27,7 @@
 		D0F5BC8E22D52A73007F0592 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F5BC8C22D52A73007F0592 /* ArticleTableViewCell.xib */; };
 		D0F5BC9122D53CE8007F0592 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC9022D53CE8007F0592 /* Media.swift */; };
 		D0F5BC9422D54017007F0592 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC9322D54017007F0592 /* UIView+Extension.swift */; };
+		D0F5BC9622D544B0007F0592 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC9522D544B0007F0592 /* ArticleDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		D0F5BC8C22D52A73007F0592 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		D0F5BC9022D53CE8007F0592 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		D0F5BC9322D54017007F0592 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D0F5BC9522D544B0007F0592 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		F6625B916DC9C280C1C3012B /* Pods_NYTimesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 			children = (
 				D0F5BC7D22D50D6F007F0592 /* Parent View Controller */,
 				D0F5BC4922D50837007F0592 /* MostPopularListingViewController.swift */,
+				D0F5BC9522D544B0007F0592 /* ArticleDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 			files = (
 				D0F5BC9422D54017007F0592 /* UIView+Extension.swift in Sources */,
 				D0F5BC8122D51744007F0592 /* Response.swift in Sources */,
+				D0F5BC9622D544B0007F0592 /* ArticleDetailsViewController.swift in Sources */,
 				D0F5BC8D22D52A73007F0592 /* ArticleTableViewCell.swift in Sources */,
 				D0F5BC8522D51DDF007F0592 /* NetworkManager+Articles.swift in Sources */,
 				D0F5BC7F22D51071007F0592 /* NetworkManager.swift in Sources */,

@@ -53,6 +53,11 @@ class MostPopularListingViewController: ParentViewController {
         activityIndecator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ArticleDetailsViewController {
+            destination.article = sender as? Article
+        }
+    }
 }
 
 extension MostPopularListingViewController: UITableViewDelegate, UITableViewDataSource {
@@ -70,6 +75,7 @@ extension MostPopularListingViewController: UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToDetails", sender: articlesDataSource[indexPath.row])
     }
 }
 

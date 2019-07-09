@@ -39,11 +39,27 @@
                     <navigationItem key="navigationItem" id="aBC-dc-eow"/>
                     <connections>
                         <outlet property="articlesTableView" destination="79a-IR-7Pu" id="cVX-AB-Ci9"/>
+                        <segue destination="GEl-3Q-2Xk" kind="show" identifier="goToDetails" id="YaF-V6-n30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="61.619190404797607"/>
+            <point key="canvasLocation" x="732" y="-636"/>
+        </scene>
+        <!--Article Details View Controller-->
+        <scene sceneID="c6S-gZ-Ogc">
+            <objects>
+                <viewController id="GEl-3Q-2Xk" customClass="ArticleDetailsViewController" customModule="NYTimesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w2F-8R-xUK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GB6-rZ-c31"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Buu-3q-X5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="-636"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t6d-dP-xnl">
