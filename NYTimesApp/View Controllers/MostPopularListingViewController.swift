@@ -12,9 +12,12 @@ class MostPopularListingViewController: ParentViewController {
     
     @IBOutlet weak var articlesTableView: UITableView!
     
+    let activityIndecator = UIActivityIndicatorView()
+    
     var articlesDataSource: [Article] = [] {
         didSet{
             articlesTableView.reloadData()
+            activityIndecator.stopAnimating()
         }
     }
     
@@ -25,6 +28,7 @@ class MostPopularListingViewController: ParentViewController {
 
     override func setupUI() {
         // this is only to remove the tableview footer
+        setupLoadingIndicator()
         articlesTableView.tableFooterView = UIView()
     }
     
@@ -38,6 +42,17 @@ class MostPopularListingViewController: ParentViewController {
             self.articlesDataSource = articles ?? []
         }
     }
+    
+    func setupLoadingIndicator() {
+        activityIndecator.hidesWhenStopped = true
+        activityIndecator.startAnimating()
+        activityIndecator.style = .gray
+        activityIndecator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndecator)
+        activityIndecator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndecator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+
 }
 
 extension MostPopularListingViewController: UITableViewDelegate, UITableViewDataSource {
