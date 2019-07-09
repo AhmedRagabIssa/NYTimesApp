@@ -22,6 +22,7 @@
 		D0F5BC8322D51755007F0592 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC8222D51755007F0592 /* Article.swift */; };
 		D0F5BC8522D51DDF007F0592 /* NetworkManager+Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC8422D51DDF007F0592 /* NetworkManager+Articles.swift */; };
 		D0F5BC8822D51EAF007F0592 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC8722D51EAF007F0592 /* AppConstants.swift */; };
+		D0F5BC8A22D52707007F0592 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BC8922D52707007F0592 /* ParentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D0F5BC8222D51755007F0592 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		D0F5BC8422D51DDF007F0592 /* NetworkManager+Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Articles.swift"; sourceTree = "<group>"; };
 		D0F5BC8722D51EAF007F0592 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		D0F5BC8922D52707007F0592 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		F6625B916DC9C280C1C3012B /* Pods_NYTimesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 		D0F5BC7D22D50D6F007F0592 /* Parent View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0F5BC8922D52707007F0592 /* ParentViewController.swift */,
 			);
 			path = "Parent View Controller";
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				D0F5BC4A22D50837007F0592 /* MostPopularListingViewController.swift in Sources */,
 				D0F5BC8822D51EAF007F0592 /* AppConstants.swift in Sources */,
 				D0F5BC4822D50837007F0592 /* AppDelegate.swift in Sources */,
+				D0F5BC8A22D52707007F0592 /* ParentViewController.swift in Sources */,
 				D0F5BC8322D51755007F0592 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,16 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: ParentViewController {
 
     var articlesDataSource: [Article] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+
+    override func getData() {
+        super.getData()
         NetworkManager.requestMostPopularArticles { (articles, error) in
             self.articlesDataSource = articles ?? []
         }
     }
-
 }
 
