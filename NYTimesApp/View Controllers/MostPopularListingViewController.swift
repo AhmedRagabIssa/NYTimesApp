@@ -8,20 +8,53 @@
 
 import UIKit
 
-class ViewController: ParentViewController {
-
-    var articlesDataSource: [Article] = []
+class MostPopularListingViewController: ParentViewController {
+    
+    @IBOutlet weak var articlesTableView: UITableView!
+    
+    var articlesDataSource: [Article] = [] {
+        didSet{
+            articlesTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
+    override func setupUI() {
+        // this is only to remove the tableview footer
+        articlesTableView.tableFooterView = UIView()
+    }
+    
+    override func register() {
+        articlesTableView.register(ArticleTableViewCell.nib, forCellReuseIdentifier: ArticleTableViewCell.reusableIdentifier)
+    }
+    
     override func getData() {
         super.getData()
         NetworkManager.requestMostPopularArticles { (articles, error) in
             self.articlesDataSource = articles ?? []
         }
+    }
+}
+
+extension MostPopularListingViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return articlesDataSource.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.reusableIdentifier, for: indexPath) as? ArticleTableViewCell {
+            cell.configure(with: articlesDataSource[indexPath.row])
+            return cell
+        } else {
+            fatalError("Cann't dequeue the cell ArticleTableViewCell")
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }
 

@@ -13,9 +13,11 @@ class ParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        register()
         getData()
     }
 
     func setupUI() {}
+    func register() {}
     func getData() {}
 }
