@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var articlesDataSource: [Article] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NetworkManager.requestMostPopularArticles { (articles, error) in
+            self.articlesDataSource = articles ?? []
+        }
     }
-
 
 }
 
