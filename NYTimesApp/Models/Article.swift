@@ -47,4 +47,14 @@ struct Article: Codable {
         }
         return nil
     }
+    
+    func gatImagesURLs() -> [URL] {
+        var urls: [URL] = []
+        for metaData in media[0].mediaMetadata {
+            if let url = URL(string: metaData.url ?? "") {
+                urls.append(url)
+            }
+        }
+        return urls
+    }
 }

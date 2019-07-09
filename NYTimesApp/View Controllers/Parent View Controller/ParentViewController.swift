@@ -20,4 +20,5 @@ class ParentViewController: UIViewController {
     func setupUI() {}
     func register() {}
     func getData() {}
+    func displayData() {}
 }
