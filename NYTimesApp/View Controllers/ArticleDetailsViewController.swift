@@ -29,7 +29,7 @@ class ArticleDetailsViewController: ParentViewController {
         dateLabel.text = article?.publishedDate ?? "No Date Provided"
         
         DispatchQueue.main.async {
-            self.addArticleImagesToTheScrollView()
+            self.addArticleImagesToTheScrollView(self.article?.gatImagesURLs())
             self.setupImagesPageController()
         }
         
@@ -37,9 +37,9 @@ class ArticleDetailsViewController: ParentViewController {
         abstractValueLabel.text = article?.abstract ?? "No abstract"
     }
     
-    func addArticleImagesToTheScrollView(){
+    func addArticleImagesToTheScrollView(_ urls: [URL]?){
 
-        for (idx, item) in (article?.gatImagesURLs() ?? []).enumerated(){
+        for (idx, item) in (urls ?? []).enumerated(){
             let imageView = UIImageView()
             imageView.kf.setImage(with: item)
             imageView.contentMode = .scaleAspectFit

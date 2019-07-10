@@ -10,9 +10,11 @@ import Foundation
 
 extension NetworkManager {
     
-    static func requestMostPopularArticles(_ forLastDays:Int = 7, using networkManager: NetworkManager = NetworkManager(), completion: @escaping (_ articles: [Article]?, _ error: Error?) -> Void) {
+    static func requestMostPopularArticles(_ baseURLStr: String = "https://api.nytimes.com/svc/mostpopular/v2/viewed/", forLastDays:Int = 7, using networkManager: NetworkManager = NetworkManager(), completion: @escaping (_ articles: [Article]?, _ error: Error?) -> Void) {
         
-        guard let url = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/viewed/\(forLastDays).json?api-key=\(aPIKey)") else {
+        guard let url = URL(string: "\(baseURLStr)\(forLastDays).json?api-key=\(aPIKey)") else {
+            let err = NSError(domain:"", code:123, userInfo:nil)
+            completion(nil, err)
             return
         }
         

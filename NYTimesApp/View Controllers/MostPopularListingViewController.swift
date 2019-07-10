@@ -39,7 +39,9 @@ class MostPopularListingViewController: ParentViewController {
     override func getData() {
         super.getData()
         NetworkManager.requestMostPopularArticles { (articles, error) in
-            self.articlesDataSource = articles ?? []
+            if let articles = articles {
+                self.articlesDataSource = articles
+            }
         }
     }
     
@@ -69,9 +71,8 @@ extension MostPopularListingViewController: UITableViewDelegate, UITableViewData
         if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.reusableIdentifier, for: indexPath) as? ArticleTableViewCell {
             cell.configure(with: articlesDataSource[indexPath.row])
             return cell
-        } else {
-            fatalError("Cann't dequeue the cell ArticleTableViewCell")
         }
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
