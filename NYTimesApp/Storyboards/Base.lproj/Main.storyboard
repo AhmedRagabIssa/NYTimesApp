@@ -156,9 +156,9 @@
                             <constraint firstItem="pi6-mn-lJW" firstAttribute="height" secondItem="w2F-8R-xUK" secondAttribute="height" priority="500" id="BX5-dj-HSx"/>
                             <constraint firstItem="pi6-mn-lJW" firstAttribute="width" secondItem="w2F-8R-xUK" secondAttribute="width" id="ESk-NF-cot"/>
                             <constraint firstItem="3dV-6W-is7" firstAttribute="top" secondItem="w2F-8R-xUK" secondAttribute="top" id="mIS-ze-igV"/>
-                            <constraint firstAttribute="trailing" secondItem="3dV-6W-is7" secondAttribute="trailing" id="sA0-7b-u5o"/>
+                            <constraint firstItem="GB6-rZ-c31" firstAttribute="trailing" secondItem="3dV-6W-is7" secondAttribute="trailing" id="sA0-7b-u5o"/>
                             <constraint firstItem="GB6-rZ-c31" firstAttribute="bottom" secondItem="3dV-6W-is7" secondAttribute="bottom" id="sKh-D5-KUa"/>
-                            <constraint firstItem="3dV-6W-is7" firstAttribute="leading" secondItem="w2F-8R-xUK" secondAttribute="leading" id="tnP-1Z-mt6"/>
+                            <constraint firstItem="3dV-6W-is7" firstAttribute="leading" secondItem="GB6-rZ-c31" secondAttribute="leading" id="tnP-1Z-mt6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GB6-rZ-c31"/>
                     </view>
