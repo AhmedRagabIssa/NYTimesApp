@@ -7,7 +7,7 @@ NYTimes most viewed articles master-detail app.
   - Pods (Alamofire, KingFisher, SwiftLint)
 
 # Technical Notes:
-  - Used MVC because the task is too simple and the time limitation.
+  - Used MVC because the task is too simple.
   - UI is built using storyboard & xib files.
   - Tried to build the UI simple as possible, to only achieve the functionality without any issues.
   - Added simple UI component from code 'Activity Indicator' with constraints.
@@ -15,13 +15,13 @@ NYTimes most viewed articles master-detail app.
   - Using Codable for parsing the JSON response and mapping it to the model.
   - Used the KingFisher Pod for async fetching and caching images.
   - Tried to respect the git-flow main guidelines.
-  - Didn't handle the no internet connection or service call failure, due to the time limitation.
+  - Didn't handle the no internet connection or service call failure.
   - Using SwiftLint for linting the code.
   - Simple Unit/UI tests implemented.
-  - The coverage test result = 97.0%, due to time limitation.
-  - No Fastlane provided, due to time limitation.
-  - No SonarQube reports provided, due to time limitation.
-  - The Listing service has a static period of 7, due to time limitation. (I was planning to have a filter for period & local search in the listing)
+  - The coverage test result = 97.0%.
+  - No Fastlane provided.
+  - No SonarQube reports provided.
+  - The Listing service has a static period of 7.
   
 # General Notes:
   - please consider that the time is so limited.
