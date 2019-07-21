@@ -18,6 +18,7 @@ NYTimes most viewed articles master-detail app.
   - Didn't handle the no internet connection or service call failure.
   - Using SwiftLint for linting the code.
   - Simple Unit/UI tests implemented.
+  - The UI tests depend on specific article title retrived from the API & because of the response changes the UI tests should be updated to valid article title when testing the project.
   - The coverage test result = 97.0%.
   - No Fastlane provided.
   - No SonarQube reports provided.
