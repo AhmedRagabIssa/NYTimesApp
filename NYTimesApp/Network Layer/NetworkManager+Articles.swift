@@ -19,12 +19,19 @@ extension NetworkManager {
         }
         
         networkManager.RequestService(url, parameters: [:]) { (res, err) in
-            if let articles = (res as? Response)?.results {
-                completion(articles, nil)
-            } else {
-                completion(nil, err)
+            do {
+                let result = try networkManager.decoder.decode(Response.self, from: res?.data ?? Data())
+                if let articles = result.results {
+                    completion(articles, nil)
+                } else {
+                    completion(nil, err)
+                }
+            } catch {
+                completion(nil, error)
             }
+            
         }
     }
     
 }
+
